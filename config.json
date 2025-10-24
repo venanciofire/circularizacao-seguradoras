@@ -1,0 +1,256 @@
+{
+  "drop_columns_contains": ["parcela","parc","parcelas", "codigo da parcela","Codigo da parcela"],
+  "rules": {
+    "suffix_overrides": true,
+    "suffix_keywords": {
+      "agrupar": [
+        "_agrupar",
+        "agrupar",
+        "consolidado",
+        "soma"
+      ],
+      "ultimo": [
+        "_ultimo",
+        "ultimo",
+        "último",
+        "mais[_ ]?recente",
+        "final"
+      ]
+    },
+    "insurer_patterns": [
+      {
+        "pattern": "JUNTO",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "POTTENCIAL",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "CESCE",
+        "mode": "ultimo"
+      },
+      {
+        "pattern": "AKAD",
+        "mode": "ultimo"
+      },
+      {
+        "pattern": "ALLIANZ_EULER",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "AVLA",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "AUSTRAL",
+        "mode": "ultimo"
+      },
+      {
+        "pattern": "AXA",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "TOKIO",
+        "mode": "ultimo"
+      },
+      {
+        "pattern": "SWISS RE",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "FAIRFAX",
+        "mode": "ultimo"
+      },
+      {
+        "pattern": "BERKLEY",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "ZURICH",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "BMG",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "MAFRE",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "BTG_PAN_TOO",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "CHUBB",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "KOVR",
+        "mode": "agrupar"
+      },
+      {
+        "pattern": "EZZE",
+        "mode": "ultimo"
+      },
+      {
+        "pattern": "FATOR",
+        "mode": "ultimo"
+      },
+      {
+        "pattern": "JNS",
+        "mode": "ultimo"
+      }
+    ],
+    "default_mode": "ultimo"
+  },
+  "column_synonyms": {
+    "num_apolice": [
+      "numero da apolice",
+      "número da apólice",
+      "nº apólice",
+      "n apolice",
+      "apolice",
+      "apólice",
+      "num_apolice",
+      "nr apolice",
+      "no apolice",
+      "policy",
+      "apolice no",
+      "apolice nro",
+      "cd_apolice",
+      "documento",
+      "documento original",
+      "apólice mãe",
+      "apolice mae",
+      "apolice/proposta"
+    ],
+    "apolice_susep": [
+      "apolice susep",
+      "apólice susep",
+      "susep",
+      "cod susep",
+      "codigo susep",
+      "código susep",
+      "cd_apolice_susep",
+      "número apólice susep",
+      "numero processo susep"
+    ],
+    "data_emissao": [
+      "data de emissao",
+      "data de emissão",
+      "emissao",
+      "emissão",
+      "dt emissao",
+      "data emissao",
+      "dt_emissao",
+      "dt emissao",
+      "data emissão",
+      "dt_emissao_",
+      "dt_emissão_endosso",
+      "data_emissao_apolice",
+      "data emissao apolice"
+    ],
+    "data_inicio_vigencia": [
+      "data inicio",
+      "data de inicio da vigencia",
+      "início vigência",
+      "inicio vigencia",
+      "vigencia inicio",
+      "inicio de vigência",
+      "dt inicio",
+      "inicio",
+      "inicio de vigencia",
+      "inicio vigência",
+      "inicio_vigencia",
+      "vigência inicial",
+      "dt inicio vigencia",
+      "vigencia inicial",
+      "dt_ini_vig_apol",
+      "inicio_vig",
+      "data_inicio_vig_apolice",
+      "dt_inicio_vigencia"
+    ],
+    "data_fim_vigencia": [
+      "data final",
+      "data de termino",
+      "data fim vigencia",
+      "fim vigencia",
+      "fim de vigência",
+      "vigencia fim",
+      "dt fim",
+      "dt_fim",
+      "termino vigencia",
+      "término vigência",
+      "fim",
+      "fim_vigencia",
+      "vigência final",
+      "dt final vigencia",
+      "vigencia final",
+      "final de vigência",
+      "final de vigência",
+      "dt_fim_vig",
+      "final_vig",
+      "data_termino_vig_apolice"
+    ],
+    "tipo_endosso": [
+      "tipo de endosso",
+      "tipo endosso",
+      "tp endosso",
+      "classificacao endosso",
+      "classificação endosso",
+      "tipo documento",
+      "tipo_operacao",
+      "tipo operação",
+      "cd tipo endosso"
+    ],
+    "num_endosso": [
+      "numero de endosso",
+      "número de endosso",
+      "nº endosso",
+      "endosso",
+      "num_endosso",
+      "nr endosso",
+      "no endosso",
+      "nr_endosso",
+      "proposta"
+    ],
+    "status_apolice": [
+      "status da apolice",
+      "status da apólice",
+      "status",
+      "situacao",
+      "situação",
+      "situacao apolice",
+      "ativo",
+      "inativo",
+      "09 status (copia)",
+      "09 status (cópia)"
+    ],
+    "is": [
+      "importancia segurada",
+      "importância segurada",
+      "is",
+      "valor segurado",
+      "limite segurado",
+      "lmi",
+      "soma segurada",
+      "importancia",
+      "importância",
+      "importancia segurada total",
+      "vl_is",
+      "vl is tomada",
+      "vl is",
+      "Importância Segurada (Exposição) - Parcela EH no risco",
+      "Importancia Segurada (Exposicao) - Parcela EH no risco",
+      "Soma de LMGA",
+      "i.s. (R$)",
+      "is_gar",
+      "i.s.",
+      "i.s automático",
+      "imp_seg_brl",
+      "lmg cobertura"
+    ]
+  }
+}
